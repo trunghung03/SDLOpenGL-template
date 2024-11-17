@@ -1,7 +1,6 @@
 #include <iostream>
 #include <glad/glad.h>
 #include <SDL2/SDL.h>
-#undef main
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_video.h>
 
@@ -10,8 +9,8 @@
 SDL_Window* SDLInit();
 SDL_GLContext OpenGLInit(SDL_Window* window);
 
-// Main code
-int main(int, char**)
+
+int main(int argc, char* argv[])
 {
     // Setup Application
 	SDL_Window* window = SDLInit();
