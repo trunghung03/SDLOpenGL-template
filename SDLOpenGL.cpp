@@ -1,7 +1,12 @@
+#if defined _DEBUG
+#pragma comment(lib, "sdl2maind")
+#else
+#pragma comment(lib, "sdl2main")
+#endif
+
 #include <iostream>
 #include <glad/glad.h>
 #include <SDL2/SDL.h>
-#undef main
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_video.h>
 
